@@ -43,8 +43,14 @@ public class Calculadora {
 		public int divideix(int a, int b) {
 			return a / b;
 		}
-		
-		public int oper1(int a, int b) {
+		/**
+		 * Calcula la pòtencia al exponent donat
+		 * @param a numero a calcular
+		 * @param b exponent
+		 * @throws java.lang.ArithmeticException no es pot dividir entre 0
+		 * @return a / b int
+		 */
+		public int calcularPotencia(int a, int b) {
 			int t = 1;
 			for (int i = 0; i < b; i++) {
 				t = t * a;
@@ -52,7 +58,13 @@ public class Calculadora {
 			return t;
 		}
 		
-		public boolean oper2(int a) {
+		/**
+		 * Comprova si el parámetre donat es par (torna true) o impar (torna false)
+		 * @param a numero el cual es vol combrobar si es par
+		 * @return torna true o false depenent de si es par
+		 */
+		
+		public boolean esPar(int a) {
 			boolean r;
 			if (a % 2 == 0) {
 				r = true;
@@ -62,6 +74,8 @@ public class Calculadora {
 			return r;
 			
 		}
+		
+		
 		
 		public String oper3(int a) {
 			String r = "";
